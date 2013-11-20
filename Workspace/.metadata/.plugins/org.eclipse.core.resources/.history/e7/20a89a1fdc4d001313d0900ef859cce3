@@ -1,0 +1,15 @@
+package ss.week1;
+
+public class HelloWorld {
+	
+	public int setting = 2; // uitleg hier
+	
+	public static int getLightLevel() {
+		return setting;
+	}
+	
+	public static void main(String[] args) {
+        System.out.println(getLightLevel());
+    }
+
+}

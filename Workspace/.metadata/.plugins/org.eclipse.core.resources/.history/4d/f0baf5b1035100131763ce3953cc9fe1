@@ -1,0 +1,27 @@
+package ss.week1.hotel;
+
+public class Guest {
+	public String name;
+	public Room room;
+	
+	public String getName(){
+		return name;
+	}
+	
+	public Room getRoom(){
+		return room;
+	}
+	
+	public boolean checkin(Room n){
+		return false;
+	}
+	
+	public boolean checkout(){
+		return false;
+	}
+	
+	public Guest(String n){
+		name = n;
+		room = null;
+	}
+}

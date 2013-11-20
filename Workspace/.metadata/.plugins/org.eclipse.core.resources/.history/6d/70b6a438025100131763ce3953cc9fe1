@@ -1,0 +1,14 @@
+package ss.week1.hotel;
+
+public class Guest {
+
+	private String name;
+	
+	public void checkin(String room){
+		
+	}
+	
+	Guest(String name){
+		
+	}
+}

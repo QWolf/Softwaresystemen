@@ -1,0 +1,30 @@
+package ss.week1;
+
+public class Password {
+	public static final String INITIAL = "";
+	private String word = INITIAL;
+	
+	public Password() {
+		word = INITIAL;
+	}
+	
+	public boolean acceptable(String suggestion) {
+		if (suggestion.length() < 6){
+			return false;
+		} 
+		if ( suggestion.indexOf(' ') == -1 ){
+			return false;
+		}
+		return true;
+
+		
+	}
+	
+	public boolean setWord(String oldpass, String newpass){
+		return false;
+	}
+	
+	public boolean testWord(String test){
+		return false;
+	}
+}

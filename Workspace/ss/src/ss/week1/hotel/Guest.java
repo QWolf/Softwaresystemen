@@ -1,0 +1,74 @@
+package ss.week1.hotel;
+
+/**
+ * Guest with name and possibly a room.
+ * @author Peter Schroten & Jordy Brinks
+ */
+
+public class Guest {
+	private String name;
+	private Room room;
+	
+	
+	/**
+     * Creates a Guest with the given name, without a Room.
+     * @param n name of the new Guest
+     */
+	public Guest(String n){
+		name = n;
+		room = null;
+	}
+	
+	/** 
+	 * Returns the name of Guest 
+	 */
+	public String getName(){
+		return name;
+	}
+	
+	/** 
+	 * returns the Room of Guest, if none returns null 
+	 * @return the Room of this <code>Guest</code>;
+     *         <code>null</code> if this <code>Guest</code> 
+     *         has no Room
+	 */
+	public Room getRoom(){
+		return room;
+	}
+	
+	/** 
+	 * sets Room to this Guest, returns True if successful 
+	 * @param no number of Room guest wants to check in to
+	 */
+	public boolean checkin(Room no){
+		if (no != null) {
+			final Guest full = no.getGuest();
+			if (full != null) {
+				return false;
+			} else {
+				room = no;
+				no.setGuest(this);
+				return true;
+			}			
+		}
+		else return false;
+	}
+	
+	/** 
+	 * sings Guest out of the Room, here and in the Room instance. If Guest had no room returns false 
+	 */
+	public boolean checkout(){
+		if (room != null){
+			room.setGuest(null);
+			room = null;
+			return true;
+		} else{
+			return false;
+		}
+		
+	}
+	public String toString() {
+	        return "Guest " + getName();
+	}
+	
+}

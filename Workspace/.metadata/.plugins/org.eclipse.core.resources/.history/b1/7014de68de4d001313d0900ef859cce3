@@ -1,0 +1,17 @@
+package ss.week1;
+
+public class Employee {
+	private static int hours = 45;
+	private static double rate = 10;
+	
+	public static double getPayment() {
+		if (hours > 40) {
+			return (40 * rate + ((hours - 40) * rate /2));
+			
+		}
+		else return rate * hours;
+	}
+	public static void main(String [] args) {
+		
+	}
+}

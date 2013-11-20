@@ -1,0 +1,32 @@
+package ss.week1;
+
+public class LampTest {
+	ThreeWayLamp lampie = new ThreeWayLamp();
+	
+	public void runTests() {
+
+		testGetLightLevel();
+		testSetLightLevel();
+		testGetLightLevel();
+		testSetLightLevel();
+		testGetLightLevel();
+		testSetLightLevel();
+		testGetLightLevel();
+		testSetLightLevel();
+		testGetLightLevel();
+		testSetLightLevel();
+	}
+	
+	public void testSetLightLevel() {
+		lampie.setLightLevel();
+	}
+	
+	public void testGetLightLevel() {
+		System.out.println(lampie.getLightLevel());
+	}
+	
+	public static void main(String[] args) {
+		runTests();
+    }
+
+}

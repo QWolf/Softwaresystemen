@@ -1,0 +1,22 @@
+package ss.week1.hotel;
+
+public class Password {
+	public static final String INITIAL = "";
+	private String word = INITIAL;
+	
+	public Password() {
+		word = INITIAL;
+	}
+	
+	public boolean acceptable() {
+		return false;
+	}
+	
+	public boolean setWord(){
+		return false;
+	}
+	
+	public boolean testWord(){
+		return false;
+	}
+}

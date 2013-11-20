@@ -1,0 +1,16 @@
+package ss.week1;
+
+public class Student {
+	
+	public static int score = 90;
+	
+	public static boolean hasPassed() {
+		if (score >= 70) return true;
+		else return false;
+	}
+	
+	public static void main(String[] args) {
+		  System.out.println(hasPassed());
+    }
+
+}

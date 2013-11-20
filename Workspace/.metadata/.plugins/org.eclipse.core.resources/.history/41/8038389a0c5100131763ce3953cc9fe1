@@ -1,0 +1,22 @@
+package ss.week1;
+
+public class Password {
+	public static final String INITIAL = "";
+	private String passw = INITIAL;
+	
+	public Password() {
+		passw = INITIAL;
+	}
+	
+	public boolean acceptable(String word) {
+		return false;
+	}
+	
+	public boolean setWord(String word){
+		return false;
+	}
+	
+	public boolean testWord(String word){
+		return false;
+	}
+}

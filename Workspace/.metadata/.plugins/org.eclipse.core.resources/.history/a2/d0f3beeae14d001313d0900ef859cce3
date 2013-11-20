@@ -1,0 +1,22 @@
+package ss.week1;
+
+public class HelloWorld {
+	
+	public static int setting = 2; 
+	
+	public static int getLightLevel() {
+	
+		return setting;
+	}
+	
+	public static void setLightLevel() {
+	setting = 1;
+	}
+	
+	public static void main(String[] args) {
+        System.out.println(getLightLevel());
+        setLightLevel();
+        System.out.println(getLightLevel());
+    }
+
+}

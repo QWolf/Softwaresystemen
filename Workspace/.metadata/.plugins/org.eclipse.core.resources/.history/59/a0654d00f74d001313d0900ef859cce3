@@ -1,0 +1,12 @@
+package ss.week1;
+
+public class DollaerCount {
+	
+	public int pay = 5;
+	
+
+	
+	public static void main(String[] args) {
+		DollaerCount Bank = new Dollarcount();
+	}
+}

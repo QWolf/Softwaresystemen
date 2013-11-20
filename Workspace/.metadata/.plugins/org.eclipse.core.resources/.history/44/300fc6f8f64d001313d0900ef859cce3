@@ -1,0 +1,18 @@
+package ss.week1;
+
+public class DollarCount {
+	
+	public int dollars () {
+		
+	}
+	
+
+
+	public int cents () {
+		
+	}
+	
+
+	
+
+}

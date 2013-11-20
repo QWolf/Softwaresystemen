@@ -1,0 +1,39 @@
+package ss.week1;
+
+public class DollarCount {
+	private int dollars = 0;
+	private int cents = 0;
+	
+	public DollarCount() {
+		dollars = 0;
+		cents = 0;
+	
+	}
+	
+	public void addDollar(int dollar, int cent) {
+		dollars = dollars + dollar;
+		cents = cents + cent;
+		if (cents >= 100) {
+			cents = cents - 100;
+			dollars = dollars + 1;
+		}
+		
+	}
+	
+
+	public static void main(String[] args) {
+		DollarCount bank = new DollarCount();
+		bank.addDollar(52, 6);
+		System.out.println(bank.dollars);
+		System.out.println(bank.cents);
+		System.out.println("next one!");
+		bank.addDollar(12, 9);
+		System.out.println(bank.dollars);
+		System.out.println(bank.cents);
+		System.out.println("next one!");
+		bank.addDollar(0, 95);
+		System.out.println(bank.dollars);
+		System.out.println(bank.cents);
+		System.out.println("next one!");
+	}
+}
